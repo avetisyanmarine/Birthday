@@ -1,14 +1,14 @@
-import MainPhoto from "../../assets/image/mainPhoto.jpg"
 import { Container, Flexible } from "../../GlobalStyle"
 import { FirstPagePart, FirstPagePartContext, GridDiv } from "./styled"
 import { useEffect, useState } from "react";
+import MainPhoto from "../../assets/image/mainPhoto.jpeg"
 
 export const FirstPage = () => {
-    const weddingDate = new Date(2025, 8, 19, 12, 30, 0);
+    const date = new Date(2025, 8, 9, 0, 0, 0);
 
     const calculateTimeLeft = () => {
         const now = new Date();
-        const diff = weddingDate - now;
+        const diff = date - now;
 
         if (diff <= 0) {
             return { days: 0, hours: 0, minutes: 0, seconds: 0 };
@@ -38,19 +38,17 @@ export const FirstPage = () => {
         <FirstPagePart>
             <img src={MainPhoto} />
             <Container>
-                <FirstPagePartContext>
-                    <h2>հարսանյաց <br /> հրավեր</h2>
-                    <Flexible className="uniqueDiv">
-                        <h1>Անդո</h1>
-                        <p className="text-[89px]">&</p>
-                        <h1 className="uniqueH1">Ռոզա</h1>
-                    </Flexible>
-                    <div className="w-full absolute bottom-9">
-                        <h2 className="uniqueH2">Մնաց</h2>
+                <FirstPagePartContext className="flex justify-center">
+                    <div className="text-right uniquediv1">
+                        <h1>Ծննդյան</h1>
+                        <h1 className="uniqueH1">հրավեր</h1>
+                    </div>
+                    <div style={{ textShadow: "1px -2px 10px 5px rgba(0,0,0,0.5)" }} className="w-full absolute bottom-9 text-center  text-[var(--color)]">
+                        <h4 className="uniqueH2">Մնացել է</h4>
                         <GridDiv>
                             <Flexible>
                                 <h2>{formatNumber(timeLeft.days)}</h2>
-                                <p>Օր</p>
+                                <p className="">Օր</p>
                             </Flexible>
                             <Flexible>
                                 <h2>{formatNumber(timeLeft.hours)}</h2>

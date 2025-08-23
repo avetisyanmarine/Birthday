@@ -6,33 +6,44 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  :root {
+    --dark-color: #776716;
+    --color: #F2DA07;
+    --black: #0E1111;
+  }
   body {
-    font-family: DavelAghvor;
+    font-family: 'Vrdznagir';
     letter-spacing: 1px;
-    background-color: #F3F3F3;
+    background: #F3F3F3;
+    color: var(--black);
+    scroll-behavior: smooth;
   }
   @font-face {
-    font-family: 'ArmAllegrou';
-    src: url("/font/ArmAllegroU.ttf");
+    font-family: 'family-home';
+    src: url("/font/family-home.woff2");
     font-display: swap;
   }
   @font-face {
     font-family: "DavelAghvor";
-    src: url("/font/davel-aghvor.otf");
+    src: url("/font/davel-aghvor.woff2");
     font-display: swap;
   }
-  h3 {
-    font-size: 24px;
+  @font-face {
+    font-family: 'Vrdznagir';
+    src: url("/font/Vrdznagir.woff2");
+    font-display: swap;
   }
-  h2 {
+  h4 {
     font-size: 36px;
     font-weight: 100;
   }
   h1 {
-    font-size: 128px;
-    font-family: ArmAllegrou;
-    color: #965A00;
+    font-size: 80px;
+    color: var(--color);
+    opacity: .9;
     font-weight: 100;
+    margin-top: 25px;
+    text-shadow: 1px 6px 5px rgba(0,0,0,0.5);    /* -webkit-text-stroke: 1px var(--color); */
   }
 `;
 const Container = styled.div`

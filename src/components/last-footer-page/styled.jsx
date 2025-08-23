@@ -1,20 +1,22 @@
 import styled from "styled-components";
 
 const LastFooterPagePart = styled.div`
-    background: #965A00;
-    color: aliceblue;
+    background: var(--color);
+    color: var(--dark-color);
 `
 const LastFooterPagePartContext = styled.div`
     font-size: 18px;
     > p {
         margin-top: 48px;
     }
-    div {
+    > div {
         display: flex;
-        justify-content: start;
         align-items: center;
-        gap: 10px;
-        div {
+        gap: 20px;
+        .unique {
+            padding-left: 20px;
+        }
+        > div {
             img {
                 padding: 11px;
                 border-right: 2px solid aliceblue;
@@ -26,9 +28,7 @@ const LastFooterPagePartContext = styled.div`
         }
    }
      a {
-        color: white;
         text-decoration: none;
-        font-weight: bold;
         cursor: pointer;
         transition: 0.2s;
     }

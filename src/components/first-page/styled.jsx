@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Flexible } from "../../GlobalStyle";
 
+
 const FirstPagePart = styled.div`
     position: relative;
     width: 100vw;
@@ -8,11 +9,13 @@ const FirstPagePart = styled.div`
     height: 100dvh;
     height: 100svh; 
     overflow: hidden;
-    img {
+    > img {
+        /* position: absolute; */
         width: 100%;
         height: 100%;
         object-fit: cover;
-        /* filter: grayscale(30%); */
+        /* top: 0; */
+        /* left: 0; */
     }
 `
 const FirstPagePartContext = styled.div`
@@ -21,45 +24,40 @@ const FirstPagePartContext = styled.div`
     width: 100%;
     top: 0;
     height: 100%;
+    .uniquediv1 {
+        margin-left: 50px;
+    }
     h2 {
         text-align: center;
-        font-family: ArmAllegrou;
         line-height: 35px;
         color: aliceblue;
         letter-spacing: 5px;
     }
     .uniqueH2 {
-        font-family: DavelAghvor;
-        margin-bottom: 28px;
+        text-shadow: 1px -6px 5px rgba(0,0,0,0.5);
+    }
+    .uniqueH1 {
+        line-height: 1px;
     }
     .uniqueDiv {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: -24px;
 
-        .uniqueH1 {
-            line-height: 48px;
-        }
         p {
-            color: #965A00;
-            font-family: ArmAllegrou;
+            color: var(--color);
             font-weight: 400;
-            margin-top: -64px;
         }
     }
 `
 const GridDiv = styled(Flexible)`
+    text-shadow: 1px 6px 5px rgba(0,0,0,0.5);
     div {
         flex-direction: column;
         text-align: center;
-        border-right: 2px solid #965A00;
-        padding: 16px 24px;
+        padding: 16px 20px;
         h2 {
-            font-size: 40px;
-            font-family: DavelAghvor;
+            color: var(--color);
+            font-size: 35px;
         }
         p {
-            color: aliceblue;
             font-size: 22px;
             line-height: 8px;
         }

@@ -8,33 +8,36 @@ const ThirdPagePart = styled.div`
     }
 `
 const ThirdPagePartContext = styled.div`
-overflow: hidden;
+    overflow: hidden;
    
+`
+const PhotoDiv = styled.div`
+margin-top: 80px;
 `
 const ThirdPagePartMini = styled.div`
     text-align: center;
     h3 {
-        font-family: ArmAllegrou;
         letter-spacing: 9px;
         font-weight: 200;
+        font-size: 20px;
         margin: 30px 0;
         &:nth-child(1) {
-            color: #965A00;
-            margin-top: 120px;
+            color: var(--dark-color);
         }
     }
     hr {
         width: 195px;
         margin: auto;
-        background: #965A00;
+        background: var(--dark-color);
         border: 0;
-        height: 2px;
+        height: 1.5px;
         border-radius: 50px;
     }
 `
 const ThirdPagePartCalendar = styled(Flexible)`
     flex-wrap: wrap;
     gap: 10px;
+    font-family: DavelAghvor;
     div {
         text-align: center;
         font-size: 27px;
@@ -58,4 +61,4 @@ const ThirdPagePartCalendar = styled(Flexible)`
 
 `
 
-export { ThirdPagePart, ThirdPagePartContext, ThirdPagePartMini, ThirdPagePartCalendar }
+export { ThirdPagePart, PhotoDiv, ThirdPagePartContext, ThirdPagePartMini, ThirdPagePartCalendar }

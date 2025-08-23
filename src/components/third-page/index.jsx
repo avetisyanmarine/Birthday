@@ -1,22 +1,13 @@
-import { ThirdPagePart, ThirdPagePartCalendar, ThirdPagePartContext, ThirdPagePartMini } from "./styled"
+import { PhotoDiv, ThirdPagePart, ThirdPagePartCalendar, ThirdPagePartMini } from "./styled"
 import { Container } from "../../GlobalStyle"
-import SvgRing from "../../assets/vectors/wedding-rings2.svg"
-import SvgChurch from "../../assets/vectors/church.svg"
-import SvgCouple from "../../assets/vectors/couple.svg"
-import { ThirdPageBlock } from "./third-page-block"
+
 
 
 export const ThirdPage = () => {
     return (
-        <ThirdPagePart>
+        <ThirdPagePart className="relative">
             <Container>
-                <h2>Ծրագիր</h2>
-                <ThirdPagePartContext>
-                    <ThirdPageBlock uniqueMargin={50} ImageSrc={SvgRing} number={'12:30'} bigText="ՀԱՐՍԻ ՏՈՒՆ" smallText="Հ․Թումանյան փողոց, 42 տուն" />
-                    <ThirdPageBlock ImageSrc={SvgChurch} number={'14:30'} bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ" smallText="Սուրբ Հռիփսիմե եկեղեցի" />
-                    <ThirdPageBlock ImageSrc={SvgRing} number={'16:00'} bigText="ՓԵՍԱՅԻ ՏՈՒՆ" smallText="Մովսես Խորենացի փողոց, 7 տուն" />
-                    <ThirdPageBlock line={true} ImageSrc={SvgCouple} number={'17:30'} bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ" smallText="Արև Ռեստորանային Համալիր" />
-                </ThirdPagePartContext>
+                <img src="/site-images/image4.jpeg" className="w-full rounded-[30px]" alt="" />
                 <ThirdPagePartMini>
                     <h3>Սիրով սպասում ենք</h3>
                     <hr />
@@ -24,9 +15,14 @@ export const ThirdPage = () => {
                 </ThirdPagePartMini>
                 <ThirdPagePartCalendar>
                     {[...Array(35)].map((_, i) =>
-                        i > 1 && i <= 31 ? <div className={i - 1 == 19 ? "special" : ""}>{i - 1}</div> : <div></div>
+                        i > 1 && i <= 31 ? <div className={i - 1 == 9 ? "special" : ""}>{i - 1}</div> : <div></div>
                     )}
                 </ThirdPagePartCalendar>
+                <img src="/half-lemon.png" alt="" className="h-[60px] absolute right-5" />
+                <PhotoDiv className="grid grid-cols-2 gap-2">
+                    <img src="/site-images/image2.jpeg" alt="" className="w-full h-auto rounded-[30px]" />
+                    <img src="/site-images/image3.jpeg" alt="" className="w-full h-auto rounded-[30px]" />
+                </PhotoDiv>
             </Container>
         </ThirdPagePart>
     )
