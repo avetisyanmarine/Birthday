@@ -5,9 +5,10 @@ import { Flexible } from "../../GlobalStyle";
 const FirstPagePart = styled.div`
     position: relative;
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh; */
     height: 100dvh;
-    height: 100svh; 
+    transition: .5s;
+    /* height: 100svh;  */
     overflow: hidden;
     > img {
         /* position: absolute; */
