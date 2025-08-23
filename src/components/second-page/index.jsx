@@ -36,7 +36,7 @@ export const SecondPage = () => {
                     <h2 className="text-[64px] text-[var(--dark-color)]" data-aos="zoom-in">2025</h2>
                     <img loading="lazy" src="half-lemon.png" alt="lemon" className="absolute w-[72px] left-9 bottom-[39%]" />
                     <h3 className="text-[36px]" data-aos="zoom-in">Դուք հրավիրված եք</h3>
-                    <h2 className="text-[64px] text-[var(--color)]" data-aos="zoom-in">11։00</h2>
+                    <h2 className="text-[64px] text-[var(--color)]" data-aos="zoom-in">14։00</h2>
                     <img src="/slice-lemon.png" alt="lemon" style={{ marginTop: "10px" }} className="w-[72px]" />
                 </SecondPagePartContext>
             </Container>
