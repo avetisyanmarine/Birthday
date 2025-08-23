@@ -23,7 +23,7 @@ export const LastFooterPage = () => {
                         <div className="unique flex flex-col justify-start gap-[10px] border-l-2">
                             <a href="https://www.instagram.com/lusine_permanent_makeup/" className="font-[family-home] text-[20px]"> lusine_permanent_makeup</a>
                             <p> Սեղմիր՝
-                                <a className="font-[davelAghvor]" href="tel:077149983"> 077-14-99-83</a>
+                                <a className="font-[davelAghvor]" href="tel:077149983"> 098-34-35-05</a>
                             </p>
                         </div>
                     </div>
