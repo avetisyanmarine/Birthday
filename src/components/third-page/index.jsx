@@ -7,7 +7,7 @@ export const ThirdPage = () => {
     return (
         <ThirdPagePart className="relative">
             <Container>
-                <img src="/site-images/image4.jpeg" className="w-full rounded-[30px]" alt="" />
+                <img src="/site-images/image2.jpg" className="w-full rounded-[30px]" alt="" />
                 <ThirdPagePartMini>
                     <h3>Սիրով սպասում ենք</h3>
                     <hr />
@@ -20,8 +20,8 @@ export const ThirdPage = () => {
                 </ThirdPagePartCalendar>
                 <img src="/half-lemon.png" alt="" className="h-[60px] absolute right-5" />
                 <PhotoDiv className="grid grid-cols-2 gap-2">
-                    <img src="/site-images/image2.jpeg" alt="" className="w-full h-auto rounded-[30px]" />
-                    <img src="/site-images/image3.jpeg" alt="" className="w-full h-auto rounded-[30px]" />
+                    <img src="/site-images/image2.jpg" alt="" className="w-full h-auto rounded-[30px]" />
+                    <img src="/site-images/image2.jpg" alt="" className="w-full h-auto rounded-[30px]" />
                 </PhotoDiv>
             </Container>
         </ThirdPagePart>

@@ -21,14 +21,14 @@ export const LastFooterPage = () => {
 
                         </div>
                         <div className="unique flex flex-col justify-start gap-[10px] border-l-2">
-                            <a href="https://www.instagram.com/lusine_permanent_makeup/" className="font-[family-home] text-[20px]"> lusine_permanent_makeup</a>
+                            <a href="https://www.instagram.com/user/" className="font-[family-home] text-[20px]"> your_instagram_account</a>
                             <p> Սեղմիր՝
-                                <a className="font-[davelAghvor]" href="tel:077149983"> 098-34-35-05</a>
+                                <a className="font-[davelAghvor]" href="tel:077149983"> 011-11-11-11</a>
                             </p>
                         </div>
                     </div>
                     <p>Կայքը պատրաստվել է
-                        <a href="https://www.instagram.com/avetisyaan.m/" className="font-[family-home] text-[20px]"> avetisyaan.m</a>-ի
+                        <a href="https://www.instagram.com/webinvite.am/" className="font-[600] text-[16px]"> Web Invite</a>-ի
                         կողմից</p>
                 </LastFooterPagePartContext>
             </Container>

@@ -21,15 +21,15 @@ export const SecondPage = () => {
                     </a>
                     <img loading="lazy" src="/slice-lemon.png" alt="lemon" className="absolute left-1.5 top-12 w-[72px]" />
                     <div id="about" className="text-center">
-                        <h2 className="text-[var(--dark-color)] text-[64px] font-['Playfair_Display',serif]" data-aos="zoom-in">Natali’s</h2>
-                        <h3 className="text-[var(--color)] text-[96px] font-[family-home]" data-aos="zoom-in">7th</h3>
+                        <h2 className="text-[var(--dark-color)] text-[64px] font-['Playfair_Display',serif]" data-aos="zoom-in">Karine's</h2>
+                        <h3 className="text-[var(--color)] text-[96px] font-[family-home]" data-aos="zoom-in">11th</h3>
                         <h3 className="text-[var(--black)] text-[64px] leading-17 font-[family-home]" data-aos="zoom-in">Birthday <br /> Party</h3>
                     </div>
                     <h5 className="text-[24px]">
                         Սիրելի ընկերներ և <br />բարեկամներ, սիրով հրավիրում <br /> եմ ձեզ միասին կիսելու իմ <br />ծննդյան ուրախությունը։Ձեր <br />ներկայությամբ օրը կլինի ավելի <br /> գեղեցիկ ու հիշարժան։
                     </h5>
                     <img loading="lazy" src="/cake.png" />
-                    <img src="/site-images/image1.jpeg" className="w-full rounded-[30px]" alt="" />
+                    <img src="/site-images/image1.jpg" className="w-full rounded-[30px]" alt="" />
                     <h3 className="text-[36px]" style={{ marginTop: "20px" }} data-aos="zoom-in">Միացեք Մեզ</h3>
                     <h2 className="text-[64px] text-[var(--dark-color)]" data-aos="zoom-in">09</h2>
                     <h3 className="text-[48px] text-[var(--color)]" data-aos="zoom-in">Սեպտեմբեր</h3>
